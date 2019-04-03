@@ -1,0 +1,90 @@
+.search_book{
+  border-right:1px solid rgba(0,0,0,0.2);
+}
+.search_book form{
+  display:flex;
+  padding:10px;
+}
+.search_book form [name='classification']{
+  flex-basis:30px;
+}
+.search_book form [name='value']{
+  flex:1 1 auto;
+  margin:0 5px;
+}
+.search_book .book_list{
+  border:1px solid rgba(0,0,0,0.2);
+  border-bottom:0;
+  border-right:0;
+  margin:5px 15px;
+}
+.search_book .book_list ul{
+  list-stye:none;
+  margin:0;
+  padding:0;
+}
+.search_book .book_list ul li{
+  display:flex;
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  text-align:center;
+}
+.search_book .book_list p{
+  border-right:1px solid rgba(0,0,0,0.2);
+  margin:0;
+  padding:2px;
+}
+.search_book .book_list p:first-child{
+  flex-basis:30px;
+}
+.search_book .book_list p:nth-child(2){
+  flex:1 1 auto;
+}
+.search_book .book_list p:nth-child(3){
+  flex-basis:80px;
+}
+.search_book .book_list p:last-child{
+  flex-basis:70px;
+}
+.search_book .book_list .pages{
+  border:1px solid rgba(0,0,0,0.2);
+  border-top:0;
+  border-left:0;
+  text-align:center;
+}
+.search_book .book_list .pages a{
+  display:inline-block;
+  padding:5px;
+  color:black;
+  text-decoration:none;
+}
+.search_book .book_list .pages a:not(.selected){
+  color:rgba(0,0,0,0.2);
+}
+.search_book .book_list .pages a:hover{
+  color:black;
+}
+.search_book .book_list .pages #prev, #next{
+  cursor:pointer;
+}
+.search_book .unactive_options{
+  margin:0 15px;
+  padding:5px;
+  cursor:pointer;
+  display:inline-block;
+}
+.search_book .active_options{
+  display:none;
+  margin:0 15px;
+  cursor:pointer;
+}
+.search_book .active_options fieldset{
+  display:inline-block;
+}
+.full_list{
+  margin-left:15px;
+  color:rgba(0,0,0,0.2);
+  text-decoration:none;
+}
+.full_list:hover{
+  color:black;
+}

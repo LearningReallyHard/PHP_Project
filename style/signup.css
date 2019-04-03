@@ -1,0 +1,39 @@
+*{
+  box-sizing:border-box;
+  word-break:break-all;
+  font-size:0.9rem;
+}
+body, html{
+  margin:0;
+  height:100%;
+}
+form{
+  display:flex;
+  justify-content:center;
+}
+form ul{
+  padding:0;
+  margin:0;
+  margin-top:30px;
+  list-style:none;
+}
+form ul li{
+  display:flex;
+  padding:4px;
+}
+form ul li p{
+  margin:0;
+}
+form ul li:not(:last-child) p:nth-child(1){
+  flex-basis:20%;
+  text-align:center;
+}
+form ul li:not(:last-child) p:nth-child(2){
+  flex-basis:75%;
+}
+form ul li:not(:last-child) p:nth-child(2) input{
+  width:100%;
+}
+form ul li:last-child, li:first-child{
+  justify-content:center;
+}

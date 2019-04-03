@@ -1,0 +1,32 @@
+.make_book{
+  margin:15px 0;
+}
+.make_book .write{
+  height:100%;
+}
+.make_book ul.write{
+  list-style:none;
+  margin:0;
+  padding:0;
+  padding-right:10px;
+}
+.make_book ul.write li{
+    display:flex;
+}
+.make_book ul.write li p{
+  margin:0;
+  padding:5px;
+}
+.make_book ul.write li p:not(:nth-child(odd)){
+  flex:1 1 auto;
+}
+.make_book ul.write li p:nth-child(odd){
+  flex-basis:50px;
+  text-align:center;
+}
+.make_book ul.write li p input[name='title'], textarea{
+  width:100%;
+}
+.make_book ul.write li p:last-child{
+  flex:1 1 auto;
+}
